@@ -11,7 +11,6 @@ import com.example.schedula_backend.repository.SlotRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
@@ -61,7 +60,6 @@ public Appointment bookAppointment(@RequestBody AppointmentRequest request) {
     return appointmentRepository.save(appt);
 }
 
-    // --- Get All Appointments for Patient ---
     // --- Get All Appointments for Patient ---
 @GetMapping("/me")
 public List<Appointment> getMyAppointments(@RequestParam String patientId) {

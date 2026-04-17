@@ -43,7 +43,6 @@ public class SlotController {
     @GetMapping("/{doctorId}/details")
 public ResponseEntity<List<DoctorSlotResponseDto>> getDoctorSlots(
         @PathVariable String doctorId) {
-    System.out.println("DETAILS API HIT 🔥🔥🔥");
 
     return ResponseEntity.ok(
             slotService.getDoctorSlotDetails(doctorId)

@@ -4,7 +4,6 @@ import com.example.schedula_backend.dto.*;
 import com.example.schedula_backend.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import java.util.HashMap;
 import java.util.Map;
 
 @RestController
